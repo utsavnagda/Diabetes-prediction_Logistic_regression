@@ -8,8 +8,8 @@ import pandas as pd
 application = Flask(__name__)
 app=application
 
-scaler=pickle.load(open("Diabetes_project/model/scaler_model.pkl","rb"))
-model = pickle.load(open("Diabetes_project/model/logistic_model.pkl", "rb"))
+scaler=pickle.load(open("./model/scaler_model.pkl","rb"))
+model = pickle.load(open("./model/logistic_model.pkl", "rb"))
 
 @app.route('/')
 def index():
